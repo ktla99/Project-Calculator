@@ -8,8 +8,12 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 500px;
     max-height: 900px;
+    width: 300px;
+    height: 700px;
 }
 
 
@@ -18,28 +22,43 @@ body {
     padding: 5px;
     border: 5px solid pink;
     align-items: center;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
 }
 
 .thirdRow {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
 }
 
 .fourthRow {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
 }
 
 .fifthRow {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
 }
 
 .sixthRow {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
+    width: 150px;
+    height: 20px;
+    justify-content: space-between;
 }
