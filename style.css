@@ -5,3 +5,34 @@ body {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.secondRow {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.thirdRow {
+    display: flex;
+    padding: 5px;
+}
+
+.fourthRow {
+    display: flex;
+    padding: 5px;
+}
+
+.fifthRow {
+    display: flex;
+    padding: 5px;
+}
+
+.sixthRow {
+    display: flex;
+    padding: 5px;
+}
