@@ -11,9 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 500px;
-    max-height: 900px;
-    width: 300px;
-    height: 700px;
+    max-height: 800px;
 }
 
 
@@ -21,9 +19,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    align-items: center;
-    width: 150px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
     justify-content: space-between;
 }
 
@@ -31,8 +28,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 150px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
     justify-content: space-between;
 }
 
@@ -40,8 +37,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 150px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
     justify-content: space-between;
 }
 
@@ -49,8 +46,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 150px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
     justify-content: space-between;
 }
 
@@ -58,15 +55,14 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 150px;
-    height: 20px;
+    width: 400px;
+    height: 50px;
     justify-content: space-between;
 }
 
 
 .numberZero {
-    flex: 2.75;
-
+    flex: 2.2;
 }
 
 .restart,
