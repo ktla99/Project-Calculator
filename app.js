@@ -1,18 +1,22 @@
-const add = function(a, b) {
+function add(a, b) {
+    const addition = document.querySelector(".addition");
     return a + b;
   };
   
-const subtract = function(a, b) {
-      return a - b;
+function minus(a, b) {
+    const subtract = document.querySelector(".subtract");
+    return a - b;
   };
 
-const multiply = function(array) {
+function multiply(array) {
+    const multiplication = document.querySelector(".multiplication")
     return array.length 
     ? a.reduce((total, current) => total * current)
     : 0;
   };
 
-const division = function (a, b) {
+function division(a, b) {
+    const divide = document.querySelector(".divide");
     if(b === 0) {
         return "ERROR";
     } else if 
@@ -22,3 +26,4 @@ const division = function (a, b) {
         return a / b;
     }
 };
+
