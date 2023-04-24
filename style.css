@@ -62,3 +62,30 @@ body {
     height: 20px;
     justify-content: space-between;
 }
+
+
+.numberZero {
+    flex: 2.75;
+
+}
+
+.restart,
+.positiveNegative,
+.percentage,
+.divide,
+.numberSeven,
+.numberEight,
+.numberNine,
+.multiplication,
+.numberFour,
+.numberFive,
+.numberSix,
+.subtract,
+.numberOne,
+.numberTwo,
+.numberThree,
+.addition,
+.dot,
+.equal {
+    flex: 1;
+}
