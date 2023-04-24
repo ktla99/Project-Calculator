@@ -7,6 +7,6 @@ const subtract = function(a, b) {
   };
 
 const multiply = function(a) {
-    return a.reduce((total, current) => total * current);
+    return a.length ? a.reduce((total, current) => total * current) : 0;
   };
 
