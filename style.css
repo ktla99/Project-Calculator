@@ -12,15 +12,19 @@ body {
     justify-content: center;
     max-width: 500px;
     max-height: 800px;
+    margin-top: 20px;
 }
 
+.result {
+    display: flex;
+}
 
 .secondRow {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 400px;
-    height: 50px;
+    width: 600px;
+    height: 90px;
     justify-content: space-between;
 }
 
@@ -28,8 +32,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 400px;
-    height: 50px;
+    width: 600px;
+    height: 90px;
     justify-content: space-between;
 }
 
@@ -37,8 +41,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 400px;
-    height: 50px;
+    width: 600px;
+    height: 90px;
     justify-content: space-between;
 }
 
@@ -46,8 +50,8 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 400px;
-    height: 50px;
+    width: 600px;
+    height: 90px;
     justify-content: space-between;
 }
 
@@ -55,33 +59,30 @@ body {
     display: flex;
     padding: 5px;
     border: 5px solid pink;
-    width: 400px;
-    height: 50px;
+    width: 600px;
+    height: 90px;
     justify-content: space-between;
 }
 
-
-.numberZero {
-    flex: 2.2;
+#operator {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 90px;
 }
 
-.restart,
-.positiveNegative,
-.percentage,
-.divide,
-.numberSeven,
-.numberEight,
-.numberNine,
-.multiplication,
-.numberFour,
-.numberFive,
-.numberSix,
-.subtract,
-.numberOne,
-.numberTwo,
-.numberThree,
-.addition,
+#clear {
+    display: flex;
+    flex: 1;
+}
+
+#number {
+    display: flex;
+    flex: 1;
+}
+
 .dot,
 .equal {
-    flex: 1;
+    display: flex;
+    flex: .47;
 }
