@@ -1,3 +1,18 @@
+const restart = document.querySelector(".restart");
+const positiveNegative = document.querySelector(".positiveNegative");
+const percentage = document.querySelector(".percentage]");
+
+const zero = document.querySelector(".numberZero");
+const one = document.querySelector(".numberOne");
+const two = document.querySelector(".numberTwo");
+const three = document.querySelector(".numberThree");
+const four = document.querySelector(".numberFour");
+const five = document.querySelector(".numberFive");
+const six = document.querySelector(".numberSix");
+const seven = document.querySelector(".numberSeven");
+const eight = document.querySelector(".numberEight");
+const nine = document.querySelector(".numberNine");
+
 function add(a, b) {
     const addition = document.querySelector(".addition");
     return a + b;
