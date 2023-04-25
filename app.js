@@ -1,6 +1,8 @@
 const restart = document.querySelector(".restart");
 const positiveNegative = document.querySelector(".positiveNegative");
 const percentage = document.querySelector(".percentage]");
+const equal = document.querySelector(".equal");
+const decimal = document.querySelector(".dot");
 
 const zero = document.querySelector(".numberZero");
 const one = document.querySelector(".numberOne");
