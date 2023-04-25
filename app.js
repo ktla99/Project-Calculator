@@ -29,5 +29,21 @@ function division(a, b) {
 };
 
 const operate = (operator, firstNumber, secondNumber) => {
-  let results;
+  let result;
+  let x = parseFloat(firstNumber);
+  let y = parseFloat(secondNumber);
+
+  if(operator === "+") {
+    result = x + y;
+  } else if (operator === "-") {
+    result = x - y;
+  } else if (operator === "*") {
+    result = x * y;
+  } else if (operator === "/") {
+    result = x / y;
+  } else {
+
+  }
+
+  
 }
