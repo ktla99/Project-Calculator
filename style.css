@@ -5,7 +5,7 @@ body {
     align-items: center;
 }
 
-.container {
+.button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,8 @@ body {
     border: 5px solid pink;
     width: 600px;
     height: 90px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .thirdRow {
@@ -37,7 +38,8 @@ body {
     border: 5px solid pink;
     width: 600px;
     height: 90px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .fourthRow {
@@ -46,7 +48,8 @@ body {
     border: 5px solid pink;
     width: 600px;
     height: 90px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .fifthRow {
@@ -55,7 +58,8 @@ body {
     border: 5px solid pink;
     width: 600px;
     height: 90px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .sixthRow {
@@ -64,28 +68,7 @@ body {
     border: 5px solid pink;
     width: 600px;
     height: 90px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-#operator {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    height: 90px;
-}
-
-#clear {
-    display: flex;
-    flex: 1;
-}
-
-#number {
-    display: flex;
-    flex: 1;
-}
-
-.dot,
-.equal {
-    display: flex;
-    flex: .47;
-}
