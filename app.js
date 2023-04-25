@@ -65,3 +65,12 @@ const addNumbers = (number) => {
     lowerDisplayText.innerText = inputDisplay.concat("", number);
   }
 }
+
+const addOperators = (operator) => {
+  if(lowerDisplayText.innerText) {
+    round = 1;
+    firstNumber = lowerDisplayText.innerText;
+    upperDisplayText.innerText = lowerDisplayText.innerText.concat("", operator);
+    lowerDisplayText.innerText = "";
+  }
+}
