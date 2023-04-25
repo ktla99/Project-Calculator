@@ -1,7 +1,7 @@
 const clear = document.querySelector("#clear");
 const operator = document.querySelectorAll('#operator');
-const numbers = document.querySelectorAll('#number');
-
+const firstNumber = document.querySelectorAll('#number');
+const secondNumber = document.querySelectorAll('#number');
 
 function add(a, b) {
     const addition = document.querySelector(".addition");
@@ -32,7 +32,7 @@ function division(a, b) {
     }
 };
 
-function resetCalc () {
+function operate () {
 
 }
 
