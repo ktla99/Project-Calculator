@@ -11,32 +11,50 @@
     <div class="container">
         <div class="secondRow">
             <button id="clear" type="button">AC</button>
-            <button id="operator" type="button">+/-</button>
-            <button id="operator" type="button">%</button>
-            <button id="operator" type="button">/</button>
+            <div id="operator">
+                <button class="positiveNegative" type="button">+/-</button>
+                <button class="percent" type="button">%</button>
+                <button class="divide" type="button">/</button>
+            </div>
         </div>
         <div class="thirdRow">
-            <button id="number" type="button">7</button>
-            <button id="number" type="button">8</button>
-            <button id="number" type="button">9</button>
-            <button id="operator" type="button">*</button>
+            <div id="num">
+                <button class="seven" type="button">7</button>
+                <button class="eight" type="button">8</button>
+                <button class="nine" type="button">9</button>
+            </div>
+            <div id="operator">
+                <button class="multiply" type="button">*</button>
+            </div>
         </div>
         <div class="fourthRow">
-            <button id="number" type="button">4</button>
-            <button id="number" type="button">5</button>
-            <button id="number" type="button">6</button>
-            <button id="operator" type="button">-</button>
+            <div id="num">
+                <button class="four" type="button">4</button>
+                <button class="five" type="button">5</button>
+                <button class="six" type="button">6</button>
+            </div>
+            <div id="operator">
+                <button class="subtract" type="button">-</button>
+            </div>
         </div>
         <div class="fifthRow">
-            <button id="number" type="button">1</button>
-            <button id="number" type="button">2</button>
-            <button id="number" type="button">3</button>
-            <button id="operator" type="button">+</button>
+            <div id="num">
+                <button class="one" type="button">1</button>
+                <button class="two" type="button">2</button>
+                <button class="three" type="button">3</button>
+            </div>
+            <div id="operator">
+                <button class="add" type="button">+</button>
+            </div>
         </div>
         <div class="sixthRow">
-            <button id="number" type="button">0</button>
-            <button class="dot" type="button">.</button>
-            <button class="equal" type="button">=</button>
+            <div id="num">
+                <button class="zero" type="button">0</button>
+            </div>
+            <div id="operator">
+                <button class="dot" type="button">.</button>
+                <button class="equal" type="button">=</button>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
