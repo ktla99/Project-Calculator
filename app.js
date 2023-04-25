@@ -45,5 +45,9 @@ const operate = (operator, firstNumber, secondNumber) => {
 
   }
 
-  
+  if(result.toString().length < 12) {
+    return result;
+  } else {
+    return result.toExponential(5);
+  }
 }
