@@ -1,6 +1,6 @@
 const restart = document.querySelector(".restart");
 const positiveNegative = document.querySelector(".positiveNegative");
-const percentage = document.querySelector(".percentage]");
+const percentage = document.querySelector(".percentage");
 const equal = document.querySelector(".equal");
 const decimal = document.querySelector(".dot");
 
@@ -43,4 +43,6 @@ function division(a, b) {
         return a / b;
     }
 };
+
+function 
 
