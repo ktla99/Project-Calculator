@@ -1,5 +1,5 @@
 let operator;
-let firstNumber, secondNumber = 1;
+let firstNumber, secondNumber, round = 1;
 let lowerDisplayText = document.getElementById("lower-screen");
 let upperDisplayText = document.getElementById("upper-screen");
 
@@ -28,4 +28,6 @@ function division(a, b) {
     }
 };
 
-function operate (firstNumber, secondNumber) {
+const operate = (operator, firstNumber, secondNumber) => {
+  let results;
+}
