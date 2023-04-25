@@ -45,9 +45,23 @@ const operate = (operator, firstNumber, secondNumber) => {
 
   }
 
-  if(result.toString().length < 12) {
+  if(result.toString().length < 10) {
     return result;
   } else {
     return result.toExponential(5);
+  }
+}
+
+const addNumbers = (number) => {
+  let inputDisplay = lowerDisplayText.innerText;
+  if(inputDisplay.length >= 10) {
+    maxCharacters();
+  } else if (inputDisplay.length === 0) {
+    if(number === "0") {
+    } else {
+      lowerDisplayText.innerText = inputDisplay.concat("", number);
+    } 
+  } else {
+    lowerDisplayText.innerText = inputDisplay.concat("", number);
   }
 }
