@@ -1,7 +1,7 @@
-const clear = document.querySelector("#clear");
-const operator = document.querySelectorAll('#operator');
-const firstNumber = document.querySelectorAll('#number');
-const secondNumber = document.querySelectorAll('#number');
+let operator;
+let firstNumber, secondNumber = 1;
+let lowerDisplayText = document.getElementById("lower-screen");
+let upperDisplayText = document.getElementById("upper-screen");
 
 function add(a, b) {
     return a + b;
@@ -29,14 +29,3 @@ function division(a, b) {
 };
 
 function operate (firstNumber, secondNumber) {
-  if(firstNumber + secondNumber) {
-    return add(firstNumber, secondNumber);
-  } else if (firstNumber - secondNumber) {
-    return minus(firstNumber, secondNumber);
-  } else if (firstNumber * secondNumber) {
-    return multiply(firstNumber, secondNumber);
-  } else {
-    return division(firstNumber, secondNumber);
-  }
-};
-
