@@ -15,8 +15,11 @@ body {
     margin-top: 20px;
 }
 
-.display {
+#display {
     display: flex;
+    height: 30px;
+    width: 400px;
+    font-size: 30px;
 }
 
 .secondRow {
