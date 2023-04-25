@@ -4,24 +4,20 @@ const firstNumber = document.querySelectorAll('#number');
 const secondNumber = document.querySelectorAll('#number');
 
 function add(a, b) {
-    const addition = document.querySelector(".addition");
     return a + b;
   };
   
 function minus(a, b) {
-    const subtract = document.querySelector(".subtract");
     return a - b;
   };
 
 function multiply(array) {
-    const multiplication = document.querySelector(".multiplication")
     return array.length 
     ? a.reduce((total, current) => total * current)
     : 0;
   };
 
 function division(a, b) {
-    const divide = document.querySelector(".divide");
     if(b === 0) {
         return "ERROR";
     } else if 
@@ -32,7 +28,15 @@ function division(a, b) {
     }
 };
 
-function operate () {
-
-}
+function operate (firstNumber, secondNumber) {
+  if(firstNumber + secondNumber) {
+    return add(firstNumber, secondNumber);
+  } else if (firstNumber - secondNumber) {
+    return minus(firstNumber, secondNumber);
+  } else if (firstNumber * secondNumber) {
+    return multiply(firstNumber, secondNumber);
+  } else {
+    return division(firstNumber, secondNumber);
+  }
+};
 
