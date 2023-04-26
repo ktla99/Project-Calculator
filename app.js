@@ -28,9 +28,21 @@ function division(a, b) {
     }
 }
 
+function percentage(a, b) {
+  return a % b;
+}
+
 
 // function which consist of two numbers and an operator
 
-function operate (a, b, operater) {
-  if(operater === )
+function operate (a, b, operator) {
+  if(operator === "+") {
+    return a + b;
+  } else if (operator === "-") {
+    return a - b;
+  } else if (operator === "*") {
+    return a * b;
+  } else if (operator === "/") {
+    return a / b;
+  }
 }
