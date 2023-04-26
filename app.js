@@ -159,7 +159,7 @@ nineButton.addEventListener('click', function(e) {
 
 sumButton.addEventListener('click', function(e){
   if(firstCalc === '') {
-    alert("Can only have one decimal per equation!")
+    alert("You need to input a number next!")
   return;
 }
 console.log(firstCalc === '');
@@ -169,4 +169,60 @@ bottomScreen.innerText = totalCalc.join('');
 firstCalc = '';
 topScreen.innerText = '';
 console.log(totalCalc);
+});
+
+multiplyButton.addEventListener('click', function(e) {
+  if(firstCalc === '') {
+    alert("You need to input a number next!")
+    return;
+  }
+  console.log(firstCalc === '');
+  let firstCalcNumber = parseFloat(firstCalc);
+  totalCalc.push(firstCalc, "*");
+  bottomScreen.innerText = totalCalc.join('');
+  firstCalc = '';
+  topScreen.innerText = '';
+  console.log(totalCalc);
+});
+
+divisionButton.addEventListener('click', function(e) {
+  if(firstCalc === '') {
+    alert("You need to input a number next!")
+    return;
+  }
+  console.log(firstCalc === '');
+  let firstCalcNumber = parseFloat(firstCalc);
+  totalCalc.push(firstCalc, "/");
+  bottomScreen.innerText = totalCalc.join('');
+  firstCalc = '';
+  topScreen.innerText = '';
+  console.log(totalCalc);
+});
+
+subtractButton.addEventListener('click', function(e) {
+  if(firstCalc === '') {
+    alert("You need to input a number next!")
+    return;
+  }
+  console.log(firstCalc === '');
+  let firstCalcNumber = parseFloat(firstCalc);
+  totalCalc.push(firstCalc, "-");
+  bottomScreen.innerText = totalCalc.join('');
+  firstCalc = '';
+  topScreen.innerText = '';
+  console.log(totalCalc);
+});
+
+remainderButton.addEventListener('click', function(e) {
+  if(firstCalc === '') {
+    alert("You need to input a number next!")
+    return;
+  }
+  console.log(firstCalc === '');
+  let firstCalcNumber = parseFloat(firstCalc);
+  totalCalc.push(firstCalc, "%");
+  bottomScreen.innerText = totalCalc.join('');
+  firstCalc = '';
+  topScreen.innerText = '';
+  console.log(totalCalc);
 });
