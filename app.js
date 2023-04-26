@@ -76,3 +76,10 @@ const multiplyButton = document.getElementById("multiply");
 const divisionButton = document.getElementById("divide");
 const remainderButton = document.getElementById("percent");
 
+// other buttons
+
+const clearAllButton = document.getElementById("clear");
+const deleteButton = document.getElementById("back-space");
+const negativeButton = document.getElementById("positiveNegative");
+const equalButton = document.getElementById("equal");
+
