@@ -234,4 +234,10 @@ clearAllButton.addEventListener('click', function(e) {
   firstCalc = '';
   topScreen.innerHTML = total.join('');
   bottomScreen.innerHTML = '';
-})
+});
+
+deleteButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.slice(0, -1);
+  bottomScreen.innerHTML = firstCalc;
+  return firstCalc;
+});
