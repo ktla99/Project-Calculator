@@ -226,3 +226,12 @@ remainderButton.addEventListener('click', function(e) {
   topScreen.innerText = '';
   console.log(totalCalc);
 });
+
+// Erase and delete buttons
+
+clearAllButton.addEventListener('click', function(e) {
+  totalCalc = [];
+  firstCalc = '';
+  topScreen.innerText = total.join('');
+  bottomScreen.innerText = '';
+})
