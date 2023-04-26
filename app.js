@@ -44,5 +44,9 @@ function operate (a, b, operator) {
     return a * b;
   } else if (operator === "/") {
     return a / b;
+  } else if (operator === "%") {
+    return a % b;
   }
 }
+
+
