@@ -5,17 +5,17 @@ let upperDisplayText = document.getElementById("upper-screen");
 
 function add(a, b) {
     return a + b;
-  };
+  }
   
 function minus(a, b) {
     return a - b;
-  };
+  }
 
 function multiply(array) {
     return array.length 
     ? a.reduce((total, current) => total * current)
     : 0;
-  };
+  }
 
 function division(a, b) {
     if(b === 0) {
@@ -26,5 +26,11 @@ function division(a, b) {
     } else {
         return a / b;
     }
-};
+}
 
+
+// function which consist of two numbers and an operator
+
+function operate (a, b, operater) {
+  if(operater === )
+}
