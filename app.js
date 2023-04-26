@@ -92,3 +92,65 @@ zeroButton.addEventListener('click', function(e) {
   return firstCalc;
 });
 
+oneButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("1");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+twoButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("2");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+threeButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("3");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+fourButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("4");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+fiveButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("5");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+sixButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("6");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+sevenButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("7");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+eightButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("8");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
+nineButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("9");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
