@@ -56,3 +56,14 @@ const bottomScreen = document.getElementById("bottom-display");
 // button for all the numbers
 
 const buttonAll = document.querySelectorAll(".button");
+
+const zeroButton = document.getElementById("zero");
+const oneButton = document.getElementById("one");
+const twoButton = document.getElementById("two");
+const threeButton = document.getElementById("three");
+const fourButton = document.getElementById("four");
+const fiveButton = document.getElementById("five");
+const sixButton = document.getElementById("six");
+const sevenButton = document.getElementById("seven");
+const eightButton = document.getElementById("eight");
+const nineButton = document.getElementById("nine");
