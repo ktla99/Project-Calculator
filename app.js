@@ -241,3 +241,31 @@ deleteButton.addEventListener('click', function(e) {
   bottomScreen.innerHTML = firstCalc;
   return firstCalc;
 });
+
+// Equal button
+
+equalButton.addEventListener('click', function(e) {
+  if(totalCalc.length === 1) {
+    return totalCalc;
+  } else if (totalCalc.slice(-1) === '*' || totalCalc.slice(-1) === '+' || totalCalc.slice(-1) === '/' || totalCalc.slice(-1) === '-' || totalCalc.slice(-1) === '%')
+  alert("You need to input a number next!");
+  return;
+} else if (firstCalc !== Number) {
+  firstCalcNumber = parseFloat(firstCalc);
+  totalCalc.push(firstCalcNumber);
+  firstCalc = '';
+  topScreen.innerHTML = totalCalc.join('');
+  bottomScreen.innerHTML = firstCalc;
+}
+
+let resultNumber;
+
+
+
+
+
+
+
+
+
+)
