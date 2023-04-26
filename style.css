@@ -15,7 +15,7 @@ body {
     margin-top: 20px;
 }
 
-#topDisplay {
+#top-display {
     display: flex;
     border: 5px solid pink;
     padding: 5px;
@@ -24,7 +24,7 @@ body {
     font-size: 30px;
 }
 
-#bottomDisplay {
+#bottom-display {
     display: flex;
     border: 5px solid pink;
     padding: 5px;
