@@ -67,3 +67,12 @@ const sixButton = document.getElementById("six");
 const sevenButton = document.getElementById("seven");
 const eightButton = document.getElementById("eight");
 const nineButton = document.getElementById("nine");
+
+// operator buttons
+
+const sumButton = document.getElementById("add");
+const subtractButton = document.getElementById("subtract");
+const multiplyButton = document.getElementById("multiply");
+const divisionButton = document.getElementById("divide");
+const remainderButton = document.getElementById("percent");
+
