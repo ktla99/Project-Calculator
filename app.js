@@ -3,6 +3,8 @@ let firstNumber, secondNumber, round = 1;
 let lowerDisplayText = document.getElementById("lower-screen");
 let upperDisplayText = document.getElementById("upper-screen");
 
+// mathematical functions for calculations
+
 function add(a, b) {
     return a + b;
   }
