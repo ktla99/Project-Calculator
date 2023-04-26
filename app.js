@@ -1,8 +1,3 @@
-let operator;
-let firstNumber, secondNumber, round = 1;
-let lowerDisplayText = document.getElementById("lower-screen");
-let upperDisplayText = document.getElementById("upper-screen");
-
 // mathematical functions for calculations
 
 function add(a, b) {
@@ -51,4 +46,13 @@ function operate (a, b, operator) {
   }
 }
 
+// calculation, top and bottom screens
 
+let totalCalc = [];
+let firstCalc = "";
+const topScreen = document.getElementById("top-display");
+const bottomScreen = document.getElementById("bottom-display");
+
+// button for all the numbers
+
+const buttonAll = document.querySelectorAll(".button");
