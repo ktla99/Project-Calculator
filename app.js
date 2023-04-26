@@ -247,10 +247,12 @@ deleteButton.addEventListener('click', function(e) {
 equalButton.addEventListener('click', function(e) {
   if(totalCalc.length === 1) {
     return totalCalc;
-  } else if (totalCalc.slice(-1) === '*' || totalCalc.slice(-1) === '+' || totalCalc.slice(-1) === '/' || totalCalc.slice(-1) === '-' || totalCalc.slice(-1) === '%')
-  alert("You need to input a number next!");
-  return;
-} else if (firstCalc !== Number) {
+    
+  } else if ((totalCalc.slice(-1) === '*' || totalCalc.slice(-1) === '+' || totalCalc.slice(-1) === '/' || totalCalc.slice(-1) === '-' || totalCalc.slice(-1) === '%') && (firstCalc === '')) {
+    alert("You need to input a number next!");
+    return;
+  
+  } else if (firstCalc !== Number) {
   firstCalcNumber = parseFloat(firstCalc);
   totalCalc.push(firstCalcNumber);
   firstCalc = '';
@@ -268,4 +270,4 @@ let resultNumber;
 
 
 
-)
+})
