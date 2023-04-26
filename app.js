@@ -154,3 +154,19 @@ nineButton.addEventListener('click', function(e) {
   console.log(firstCalc);
   return firstCalc;
 });
+
+// Functions for operators
+
+sumButton.addEventListener('click', function(e){
+  if(firstCalc === '') {
+    alert("Can only have one decimal per equation!")
+  return;
+}
+console.log(firstCalc === '');
+let firstCalcNumber = parseFloat(firstCalc);
+totalCalc.push(firstCalcNumber, "+");
+bottomScreen.innerText = totalCalc.join('');
+firstCalc = '';
+topScreen.innerText = '';
+console.log(totalCalc);
+});
