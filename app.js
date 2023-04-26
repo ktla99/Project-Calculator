@@ -28,7 +28,7 @@ function division(a, b) {
     }
 }
 
-function percentage(a, b) {
+function remainder(a, b) {
   return a % b;
 }
 
