@@ -232,7 +232,7 @@ remainderButton.addEventListener('click', function(e) {
 clearAllButton.addEventListener('click', function(e) {
   totalCalc = [];
   firstCalc = '';
-  topScreen.innerHTML = total.join('');
+  topScreen.innerHTML = totalCalc.join('');
   bottomScreen.innerHTML = '';
 });
 
