@@ -83,3 +83,12 @@ const deleteButton = document.getElementById("back-space");
 const negativeButton = document.getElementById("positiveNegative");
 const equalButton = document.getElementById("equal");
 
+// functions for numbered buttons
+
+zeroButton.addEventListener('click', function(e) {
+  firstCalc = firstCalc.concat("0");
+  topScreen.innerText = firstCalc;
+  console.log(firstCalc);
+  return firstCalc;
+});
+
