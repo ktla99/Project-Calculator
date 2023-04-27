@@ -1,4 +1,12 @@
+/* (*::) before all elements and *::after elements */
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(101, 26, 161);
 }
