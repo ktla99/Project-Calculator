@@ -5,6 +5,29 @@ class Calculator {
   }
 }
 
+clear() {
+
+}
+
+delete() {
+
+}
+
+appendNumber() {
+
+}
+
+chooseOperation() {
+
+}
+
+compute() {
+
+}
+
+updateDisplay() {
+
+}
 
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
