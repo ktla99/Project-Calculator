@@ -16,11 +16,11 @@ class Calculator {
 
   }
 
-  appendNumber() {
+  appendNumber(number) {
 
   }
 
-  chooseOperation() {
+  chooseOperation(operation) {
 
   }
 
