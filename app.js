@@ -2,31 +2,35 @@ class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement
     this.currentOperandTextElement = currentOperandTextElement
+    this.clear()
   }
+
+
+  clear() {
+    this.currentOperandTextElement = ''
+    this.previousOperandTextElement = ''
+    this.operation = undefined
+  }
+
+  delete() {
+
+  }
+
+  appendNumber() {
+
+  }
+
+  chooseOperation() {
+
+  }
+
+  compute() {
+
+  }
+
+  updateDisplay() {
+
 }
-
-clear() {
-
-}
-
-delete() {
-
-}
-
-appendNumber() {
-
-}
-
-chooseOperation() {
-
-}
-
-compute() {
-
-}
-
-updateDisplay() {
-
 }
 
 const numberButtons = document.querySelectorAll('[data-number]');
