@@ -13,12 +13,13 @@ class Calculator {
   }
 
   delete() {
+    this.currentOperand = this.currentOperand.toString().toSlice(0, -1)
 
   }
 
   appendNumber(number) {
     if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = number.currentOperand.toString() + number.toString()
+    this.currentOperand = this.currentOperand.toString() + number.toString()
   }
 
   chooseOperation(operation) {
@@ -36,14 +37,40 @@ class Calculator {
     const prev = parseFloat(this.previousOperand)
     const current = parseFloat(this.currentOperand)
     if (isNaN(prev) || isNaN(current)) return
-    switch
+    switch(this.operation) {
+      case '+':
+        computation = prev + current
+        break
+      case '-':
+        computation = prev - current
+        break
+      case '*':
+        computation = prev * current
+        break
+      case '÷':
+        computation = prev / current
+        break
+      default:
+        return
+    }
+    this.currentOperand = computation
+    this.operation = undefined
+    this.previousOperand = ''
+  }
 
+  getDisplayNumber(number) {
+    const floatNumber = parseFloat(number)
+    if(isNaN(floatNumber)) return ''
+    return number.toLocaleString('en')
   }
 
   updateDisplay() {
-    this.currentOperandTextElement.innerText = this.currentOperand
-    this.previousOperandTextElement.innerText = this.previousOperand
-
+    this.currentOperandTextElement.innerText = 
+      this.getDisplayNumber(this.currentOperand)
+    if(this.operation != null) {
+      this.previousOperandTextElement.innerText = 
+      `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+    }
   }
 }
 
@@ -73,5 +100,15 @@ operationButtons.forEach(button => {
 
 equalButton.addEventListener('click', button => {
   calculator.compute()
+  calculator.updateDisplay()
+})
+
+allClearButton.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button => {
+  calculator.delete()
   calculator.updateDisplay()
 })
