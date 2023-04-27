@@ -44,4 +44,16 @@ body {
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
+    word-wrap: break-word; /* Allows to break in the middle of it */
+    word-break: break-all; /* Break all words*/
+}
+
+.output .previous-operand {
+    color: rgb(112, 150, 138);
+    font-size: 30px;
+}
+
+.output .current-operand {
+    color: aquamarine;
+    font-size: 50px;
 }
