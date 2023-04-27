@@ -7,8 +7,8 @@ class Calculator {
 
 
   clear() {
-    this.currentOperandTextElement = ''
-    this.previousOperandTextElement = ''
+    this.currentOperand = ''
+    this.previousOperand = ''
     this.operation = undefined
   }
 
@@ -17,7 +17,8 @@ class Calculator {
   }
 
   appendNumber(number) {
-
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = number.currentOperand.toString() + number.toString()
   }
 
   chooseOperation(operation) {
@@ -29,24 +30,31 @@ class Calculator {
   }
 
   updateDisplay() {
+    this.currentOperandTextElement.innerText = this.currentOperand
 
   }
 }
 
-const numberButtons = document.querySelectorAll('[data-number]');
-const operationButtons = document.querySelectorAll('[data-operation]');
-const equalButton = document.querySelector('[data-equal]');
-const deleteButton = document.querySelector('[data-delete]');
-const allClearButton = document.querySelector('[data-all-clear]');
-const previousOperandTextElement = document.querySelector('[data-previous-operand]');
-const currentOperandTextElement = document.querySelector('[data-current-operand]');
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalButton = document.querySelector('[data-equal]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
-    calculator.appendNumber(button.innerHTML)
+    calculator.appendNumber(button.innerText)
     calculator.updateDisplay()
+  })
+})
 
+operationButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.chooseOperation(button.innerText)
+    calculator.updateDisplay()
   })
 })
