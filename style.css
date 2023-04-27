@@ -14,7 +14,7 @@ body {
 .calculator-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh; /* 100vh means that it will center 100 all the time */
     grid-template-columns: repeat(4, 100px); /* have four columns with 100px wide */
     grid-template-rows: minmax(120px, auto) repeat(5, 100px); /* minimum is at 120px tall and for height is auto to fit anything. repeat 5 times and 100 px wide*/
