@@ -13,8 +13,7 @@ class Calculator {
   }
 
   delete() {
-    this.currentOperand = this.currentOperand.toString().toSlice(0, -1)
-
+    this.currentOperand = this.currentOperand.toString().slice(0, -1)
   }
 
   appendNumber(number) {
@@ -37,7 +36,7 @@ class Calculator {
     const prev = parseFloat(this.previousOperand)
     const current = parseFloat(this.currentOperand)
     if (isNaN(prev) || isNaN(current)) return
-    switch(this.operation) {
+    switch (this.operation) {
       case '+':
         computation = prev + current
         break
@@ -92,7 +91,7 @@ class Calculator {
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
-const equalButton = document.querySelector('[data-equal]')
+const equalsButton = document.querySelector('[data-equal]')
 const deleteButton = document.querySelector('[data-delete]')
 const allClearButton = document.querySelector('[data-all-clear]')
 const previousOperandTextElement = document.querySelector('[data-previous-operand]')
@@ -114,7 +113,7 @@ operationButtons.forEach(button => {
   })
 })
 
-equalButton.addEventListener('click', button => {
+equalsButton.addEventListener('click', button => {
   calculator.compute()
   calculator.updateDisplay()
 })
