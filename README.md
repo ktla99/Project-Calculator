@@ -6,3 +6,5 @@ The calculator has all the basic functions of a calculator and the ability to re
 
 Link to the project: 
 https://ktla99.github.io/Project-Calculator/
+
+
